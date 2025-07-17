@@ -1,0 +1,144 @@
+body{
+    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;  
+}
+nav{
+    padding-left:2%;
+    padding-top: 10px;
+    background-color:rgb(254 247 228) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    height: 70px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 10px;
+}
+li a{
+    text-decoration: none;
+    color: rgb(22, 57, 0);
+}
+li a:hover{
+    color: rgb(247, 199, 55);
+    text-decoration: underline;
+}
+h2{
+    font-weight: bolder;
+    font-size: 4em;
+    margin-bottom: 0;
+}
+.span{
+    border-radius: 5%;
+    background-color: rgb(245, 223, 203);
+    font-size: small;
+    font-weight: light;
+    padding: 15px 5px;
+}
+h1{
+    font-size: 4em;
+    font-weight: bolder;
+    color: rgb(247, 199, 55);
+    margin-top: 0;
+}
+p{
+    color: rgb(108, 137, 90);
+    width: 50vw;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    margin:20px 0;
+    padding: 15px 9px;
+}
+#Main img{
+    
+    height: 70%;
+    float: right;
+    border: 30px solid white;
+    border-radius: 15px;
+    outline: rgb(247, 199, 55) solid 1px;
+    margin-right: 40px;  
+}
+#Main{
+    
+    background: linear-gradient(to bottom,rgb(254 247 228),white);
+    color: rgb(47 79 51);
+    padding: 70px 0px;
+    display: flex;
+}
+.text{
+    padding-left: 2%;
+    float: left;
+    width: 50vw;
+}
+.image{
+    float: right;
+    width: 50vw;
+}
+hr{
+    width: 100vw;
+    height: 3px;
+    background-color: rgb(247, 199, 55);
+    border: none;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#products{
+    background: linear-gradient(to bottom, white, rgb(254 247 228), white);
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.product-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: auto;
+}
+.product-container div{
+    background-color: white;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 30px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#products img{
+    height: 20%;
+    border-radius: 5px;
+    outline: rgb(242, 241, 241) solid .5px;  
+}
+#products a{
+    text-decoration: none;
+    color: rgb(247, 199, 55);
+    font-weight: bolder;
+    font-size: 1.2em;
+    display: block;
+}
+.product-container p{
+    color: rgb(108, 137, 90);
+    font-size: 0.9em;
+    margin: 10px 0;
+    width: auto;
+}
+#products h2{
+    font-size: 2em;
+    color: rgb(22, 57, 0);
+    margin: 20px 0; 
+}
+#about{
+    background-color: rgb(254 247 228);
+}
