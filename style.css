@@ -105,9 +105,8 @@ hr{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    height: auto;
 }
-.product-container div{
+.product{
     background-color: white;
     background: white;
     border-radius: 10px;
@@ -115,6 +114,8 @@ hr{
     width: 280px;
     padding: 30px 20px;
     transition: transform 0.3s, box-shadow 0.3s;
+    max-height: fit-content;
+    overflow: hidden;
 }
 #products img{
     height: 20%;
