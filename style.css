@@ -1,7 +1,20 @@
 body{
     font-family: Poppins, sans-serif;
     padding: 0;
-    margin: 0;  
+    margin: 0; 
+    max-width: 100vw;
+}
+/* for preventing horizontal scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  outline: 3px dashed red;
+}
+body {
+  outline: 3px dashed blue;
 }
 nav{
     padding-left:2%;
@@ -92,6 +105,7 @@ hr{
 }
 #products{
     background: linear-gradient(to bottom, white, rgb(254 247 228), white);
+    padding-bottom: 50px;
 }
 #text{
     display: flex;
@@ -118,9 +132,11 @@ hr{
     overflow: hidden;
 }
 #products img{
-    height: 20%;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 5px;
-    outline: rgb(242, 241, 241) solid .5px;  
+    outline: rgb(242, 241, 241) solid 0.5px;
 }
 #products a{
     text-decoration: none;
@@ -140,6 +156,76 @@ hr{
     color: rgb(22, 57, 0);
     margin: 20px 0; 
 }
-#about{
-    background-color: rgb(254 247 228);
+
+/* about section */
+
+.left-side>div{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    width: 70%;
 }
+.left-side>div div{
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(22, 57, 0);
+}
+.main-container img{
+    align-self: center;
+    width: 3vw;
+}
+.main-container h1{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+.main-container p{
+    font-size: 1.2em;
+    color: rgb(108, 137, 90);
+    width: 80%;
+    margin: 20px 0;
+}
+/* end */
+.main-container {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  background-color: rgb(254 247 228);
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  overflow: hidden;
+}
+.left-side {
+  padding: 20px;   
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    
+}
+.right-side {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.grid-item {
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
