@@ -62,7 +62,6 @@ h1{
 }
 p{
     color: rgb(108, 137, 90);
-    width: 50vw;
 }
 button{
     border-radius: 5px;
@@ -181,7 +180,7 @@ hr{
     margin-bottom: 0;
 }
 .main-container p{
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgb(108, 137, 90);
     width: 80%;
     margin: 20px 0;
@@ -194,19 +193,21 @@ hr{
   background-color: rgb(254 247 228);
   padding: 1%;
   display: flex;
-  justify-content: space-between;
   padding: 0;
   overflow: hidden;
 }
 .left-side {
-  padding: 20px;   
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
-    
+  padding: 20px; 
+  padding-right: 0;  
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 50%;
 }
 .right-side {
+  width: 50%;
   padding: 20px;
+  padding-left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -226,6 +227,29 @@ hr{
   flex-wrap: wrap;
   justify-content: center;   
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-    
 }
 
+/* Contact section */
+#contact{
+    padding: 70px 2%;
+    background: linear-gradient(to bottom, white,rgb(254 247 228) );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ceo img{
+    width: 500px;
+    border-radius: 5px;
+    border: 20px solid white;
+    outline: rgb(247, 199, 55) solid 1px;
+    float: left;
+    margin-right: 60px;
+}
+.ceo{
+    margin-top: 60px;
+    padding-right: 80px;
+}
+.ceo p{
+    line-height: 1.5;
+    font-size: 1.2em;
+}
