@@ -1,6 +1,8 @@
 *{
-font-family: Poppins, sans-serif;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
 }
+
 body{
     
     padding: 0;
@@ -26,9 +28,13 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 #logo{
-    height: 70px;
+    height: 50px;
 }
 nav ul{
     display: flex;
@@ -72,7 +78,7 @@ button{
     margin:20px 0;
     padding: 15px 9px;
 }
-#Main img{
+#home img{
     
     height: 70%;
     float: right;
@@ -81,12 +87,13 @@ button{
     outline: rgb(247, 199, 55) solid 1px;
     margin-right: 40px;  
 }
-#Main{
+#home{
     
     background: linear-gradient(to bottom,rgb(254 247 228),white);
     color: rgb(47 79 51);
     padding: 70px 0px;
     display: flex;
+    margin-top: 60px;
 }
 .text{
     padding-left: 2%;
@@ -188,7 +195,6 @@ hr{
     width: 80%;
     margin: 20px 0;
 }
-/* end */
 .main-container {
   display: flex;
   width: 100%;
@@ -231,7 +237,6 @@ hr{
   justify-content: center;   
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 /* Contact section */
 #contact{
     padding: 70px 2%;
@@ -330,7 +335,37 @@ form button {
     border-radius: 5px;
     cursor: pointer;
     width: 90%;
-    height: 4em;
+    height: 3em;
     font-size: large;
     font-weight: bold;
+}
+/* footer section */
+#links{
+    background-color:rgb(254 247 228) ;
+    padding-left: 20px;
+    display: flex;
+}
+#links>div{
+    width: 30%;
+    padding: 20px;   
+}
+.links{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+#links ul{
+    padding: 0;
+}
+#links ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+}
+.cont div{
+    margin-bottom: 30px;
 }
